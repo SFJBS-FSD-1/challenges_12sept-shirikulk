@@ -68,7 +68,9 @@ places = {("19.07'53.2", "72.54'51.0"):"Mumbai", \
 
 new_dict = dict([(value, key) for key, value in places.items()])
 print("dict after swapping: " + str(new_dict))
-
+upd_dict = {'Latitude' : "", 'Longitude': ""}
+new_dict['Mumbai'].add(upd_dict)
+print("dict after all updates : " + str(new_dict))
 
 
 # lat = []
