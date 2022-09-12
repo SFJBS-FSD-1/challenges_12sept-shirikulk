@@ -68,22 +68,21 @@ places = {("19.07'53.2", "72.54'51.0"):"Mumbai", \
 
 new_dict = dict([(value, key) for key, value in places.items()])
 print("dict after swapping: " + str(new_dict))
-upd_dict = {'Latitude' : "", 'Longitude': ""}
-new_dict['Mumbai'].add(upd_dict)
-print("dict after all updates : " + str(new_dict))
+# upd_dict = {"Latitude": "19.07'53.2", "Longitude": "72.54'51.0"}
+# new_dict['Mumbai'].update(upd_dict)
+# print("dict after all updates : " + str(new_dict))
 
+lat = []
+long = []
+plc = []
+for i in places:
+    lat.append(i[0])
+    long.append(i[1])
+    plc.append(places[i[0], i[1]])
 
-# lat = []
-# long = []
-# plc = []
-# for i in places:
-#     lat.append(i[0])
-#     long.append(i[1])
-#     plc.append(places[i[0], i[1]])
-#
-# print(lat)
-# print(long)
-# print(plc)
+print(lat)
+print(long)
+print(plc)
 
 #Challnege 6 : Given mylist  =  [3, 5 ,4 , 6, 9, 10 , 2 , 8, 7 ,1]
 #Using for loop find the sum of all even numbers in mylist
